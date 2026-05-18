@@ -1,0 +1,101 @@
+#include <bits/stdc++.h>
+using namespace std;
+/*
+        CONSTRUCTORS
+        
+        THESE ARE SPECICAL MEMEBER FUNCTION WHICH ARE AUTOMATICALLY 
+        CALLED WHEN THE OBJECT IS MADE
+
+
+        CONSTRUCTOR HELPS IN INTIALLISE VALUE PROPERLY 
+        
+        CONSTRUCTOR DONT HAVE A RETURN typedef
+        NOT LIKE VOID STUDENT() LIKE THIS WE CANT OK
+        
+        
+        
+        
+*/
+
+// class student{
+//     public:
+//     student(){
+//         cout<<"THIS IS AN CONSTRUCTOR";
+//     }
+// };
+    
+/*
+        default CONSTRUCTOR
+        A constructor with no parameters.
+        
+*/
+    
+// class Car{
+//     public:
+//     string name;
+//     Car(){
+//         name="Audi"; //this is a default constructor
+//     }
+//     void show(){
+//         cout<<"The car name is : "<<name; 
+//     }
+// };
+// int main() {
+// 	Car s1;
+// 	s1.show();
+// }
+
+/*
+    
+parameterized constructor
+Constructor with parameters.
+
+Used to initialize objects with different values.
+
+*/
+// class student{
+//     public:
+//     string name;
+//     int age;
+//     student(string n,int a){
+//         name=n;
+//         age=a;
+//     }
+//     void show(){
+//         cout<<"Name is : "<<name;
+//         cout<<endl;
+//         cout<<"Age is : "<<age;
+//         cout<<endl;
+//     }
+// };  
+// int main() {
+// 	student s1("Abhi",21);
+// 	student s2("Bashar",21);
+// 	s1.show();
+// 	s2.show();
+// }
+
+/*
+    copy CONSTRUCTORS
+    Used to copy one object into another.
+*/
+
+class student{
+    public:
+    int x;
+    student(int a){
+        x=a;
+    }
+    student(student &t){
+        x=t.x;
+    }
+    void value(){
+        cout<<"The value will be "<<x<<endl;
+    }
+};
+
+int main(){
+    student s1(20);
+    student s2=s1;
+    s2.value();
+}
