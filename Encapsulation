@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+/*
+    ENCAPSULATION - > WRAPPING UP DATA AND FUNCTIONS TOGETHER IN A SINGLE UNIT
+    
+    THAT IS class
+    
+    IT IS ACHIEVED USING CLASS AND SPECIFIER (PUBLIC,PRIVATE,protected);
+    
+    
+    this is the basic example of it 
+    basic purpose of it to provide security to it
+*/
+
+
+// class marks{
+//     private:
+//         int marks;
+//     public:
+//         void setmarks(int m){
+//             marks=m;
+//         }
+//         void display(){
+//             cout<<"Marks of the student are: "<<marks<<endl;
+//         }
+// };
+// int main() {
+//     marks m1;
+//     m1.setmarks(98);
+//     m1.display();
+// }
+// class bank{
+//     private:
+//         int balance=0;
+//     public:
+//         void deposit(int amount){
+//             balance+=amount;
+//         }
+//         void withdraw(int amount){
+//             balance-=amount;
+//         }
+//         void getbalance(){
+//             cout<<"The available balance is : "<<balance<<endl;
+//         }
+// };
+// int main() {
+//     bank b;
+//     b.deposit(1000);
+//     b.getbalance();
+//     b.withdraw(100);
+//     b.getbalance();
+// }
+
+
+
