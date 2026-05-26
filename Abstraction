@@ -1,0 +1,61 @@
+#include <bits/stdc++.h>
+using namespace std;
+/*
+    Abstraction: 
+    
+    Showing only importand information and hiding internal details
+    
+    
+    real life example can be of a car 
+    so we know what are handles,breakes,accelator but
+    we dont know its internal working 
+    
+    It is achieved though 
+    abstract classes and Pure virtual functions
+    
+    what is pure virtual funtion:
+    It has no body in the base class
+    
+    
+    ex: virtual void show() = 0;
+    
+    
+    Abstract Class:
+
+        1-A class containing at least one pure virtual function.
+        2-You cannot create object of abstract class.
+    
+    
+    
+    why abstraction is important because it hides internal implementation
+    and simplify 
+    
+    ek bhi agar mere bass base class m virtual funtion h tho vo abstract class h aur usko derived m define krne he padega ok
+    
+
+*/
+class Vehicle{
+    public:
+    virtual void run()=0;
+};  
+class car: public Vehicle{
+    public:
+    void run(){
+        cout<<"Car is running"<<endl;
+    }
+};
+class bus:public Vehicle{
+    public:
+    void run(){
+        cout<<"Bus is running"<<endl;
+    }
+};
+
+
+int main() {
+    car c1;
+    bus b1;
+    c1.run();
+    b1.run();
+
+}
